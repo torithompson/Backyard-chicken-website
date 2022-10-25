@@ -1,0 +1,66 @@
+<!doctype html>
+<!-- Tori Thompson-->
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Contact us form</title>
+    <link rel="stylesheet" type="text/css" href="./css/styling.css"/>
+    <script src = "./javascript/functions.js"></script>
+</head>
+<body onload = "todaysDate()">
+<div class = "headings"> 
+    <h1>Backyard Chickens</h1>
+<span class ="heading2">Chickens make great pets!</span>
+</div>
+
+<div class = "navflexcontainer"> 
+    <div class = "navflexitem"><a href = "index.html">Home</a></div>
+    <div class = "navflexitem"><a href = "tablePage.html">Table</a></div>
+    <div class = "navflexitem"><a href = "imagespage.html">Images</a></div>
+    <div class = "navflexitem"><a href = "form.html">Form</a></div>
+    <div class = "navflexitem navspace"></div>
+
+    <div class = "navflexsocial"><a target = _blank href = "http://www.facebook.com" title ="Facebook" >
+        <img src = "./imgs/facebook.jfif" height = "20" width = "20" alt="Facebook"/></a></div>
+
+    <div class = "navflexsocial"><a target = _blank href = "http://www.twitter.com" title ="Twitter" >
+        <img src = "./imgs/twitter.png" height = "20" width = "20" alt="Twitter"/></a></div>
+</div>
+<div class = "maincontainer">
+    Contact us for our monthly backyard chicken newsletter, full of information for raising your backyard flock!
+    <form action = "formcomplete.html">
+    
+    <p><label for = "Name">Name: </label><input type = "text" id = "Name" required/></p>
+    <p><label>Address:</label><input type= "text" id = "Address" required/></p>
+    <p><label>Phone Number: </label><input type = "tel"/></p>
+    <p><label for = "Email_Address">Email address: </label>
+    <input type = "email" id = "Email_Address" required/></p>
+    <p><label for = "agreed">I wish to receive a monthly newsletter about backyard chickens:</label>
+    <input type = "checkbox" id = "agreed" checked></p>
+    <p><label>Do you want us to contact you with exciting new products?</label>
+    <input type = "checkbox" id = "newproducts"/></p>
+    <p><label>Do you wish to receive the newsletter by email or mail?</label>
+    <input type = "radio" name = "newsletter" value = "Email"/>Email
+    <input type = "radio" name = "newsletter" value = "Snailmail"/>SnailMail</p>
+    <p><label>Please tell us a little bit about your backyard flock so we can tailor the newsletter to you: </label></p>
+    <textarea id = "answer" rows = "10" cols = "25" maxlength ="400"></textarea>
+    <p><label>Check the type of chickens you have or are interested in:</label></p>
+    <p><select id = "breeds" size = "1">
+        <option value = "PlymouthR">Plymouth Rock</option>
+        <option value = "Marans">Cuckoo Marans</option>
+        <option value = "Eggers">Easter Eggers</option>
+        <option value = "Ameraucana">Ameraucana</option>
+        <option value = "Dorking">Dorking</option>
+    </select></p>
+    <p><label>Date and time we can contact you for newletter set up: </label><input type = "date"/>
+    <input type = "time"/></p>
+    <div class = "submitbtn"><button>Submit</button></div>
+    </form>
+</div>
+
+<div class = "footercontainer">
+    Tori Thompson | <a href="mailto:tori.thompson@student.sl.on.ca">tori.thompson@student.sl.on.ca</a>|
+    <span id = "currentDate"></span>
+</div>
+</body>
+</html>
